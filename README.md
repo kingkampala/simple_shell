@@ -1,9 +1,9 @@
-###PROJECT
+### PROJECT
 Simple Shell
 
-###DESCRIPTION
+### DESCRIPTION
 Simple UNIX command interpreter
 
-###AUTHORS
+### AUTHORS
 Ezeanya ThankGod <Kingkampala>
 Jennifer Agbor <Solaceisastar>

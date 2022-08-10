@@ -42,7 +42,7 @@ void fork_child(vars_t vars)
 }
 
 /**
- * path_finder - Acts as an interface for functions that will be able
+ * path_finder - Acts as an interface for functions that will be able.
  * to find the full path of a program.
  * @command: A common command such as ls, echo, pwd, etc..
  * Return: On success a string with the full path of the program.
@@ -86,7 +86,7 @@ char *path_finder(vars_t vars, char *command)
 
 /**
  * find_env_index - Finds the index of an environmental variable.
- * @vars: structure with variables will be used
+ * @vars: structure with variables will be used.
  * @str: Environmental variable that needs to be found.
  * Return: Upon success returns the inde of the environmental variale
  * otherwise returns -1.
@@ -112,9 +112,9 @@ int find_env_index(vars_t vars, char *str)
 /**
  * tokenize_path - Separates a string of path as an array of
  * strings containing the path directories.
- * @vars: structure with variables will be used
+ * @vars: structure with variables will be used.
  * @index: index of the path in the environment variables.
- * @str: string to separate and tokenize
+ * @str: string to separate and tokenize.
  * Return: On success a NLL terminated array of string.
  * otherwise returns NULL.
  */

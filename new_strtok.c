@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * check_if_match - checks if a character matches any in a string
+ * check_if_match - checks if a character matches any in a string.
  * @c: character to check
  * @str: string to check
  *
@@ -19,7 +19,7 @@ unsigned int check_if_match(char c, const char *str)
 }
 
 /**
- * new_strtok - custom strtok
+ * new_strtok - custom strtok.
  * @str: string to tokenize
  * @delim: delimiter to tokenize against
  *

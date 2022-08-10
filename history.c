@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *add_nodeint - Add node in the beginning
+ * *add_nodeint - Add node in the beginning.
  * @head: The pointer of the history list.
  * @str: The string received.
  *
@@ -41,7 +41,7 @@ void *add_nodeint(history_t **head, char *str)
 }
 
 /**
- * free_listint - free pointers related with malloc
+ * free_listint - free pointers related with malloc.
  * @head: The pointer of the list
  *
  * Return: The number of elements in the list
@@ -65,7 +65,7 @@ void free_listint(history_t *head)
 }
 
 /**
- * new_history - Print the list of a single list
+ * new_history - Print the list of a single list.
  * @vars: structure with variables.
  * Return: The number of elements in the list
  */
@@ -112,7 +112,7 @@ void new_history(vars_t *vars)
 }
 /*** WRITES STRING TO STDOUT ***/
 /**
- * _puts3 - writes a string to standard output
+ * _puts3 - writes a string to standard output.
  * @str: string to write
  *
  * Return: number of chars printed or -1 on failure

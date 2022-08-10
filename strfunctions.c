@@ -3,7 +3,7 @@
 
 /***** RETURNS A POINTER TO A NEW STRING ******/
 /**
- * _strdup - returns pointer to new mem alloc space which contains copy
+ * _strdup - returns pointer to new mem alloc space which contains copy.
  * @strtodup: string to be duplicated
  * Return: a pointer to the new duplicated string
  */
@@ -29,7 +29,7 @@ return (copy);
 
 /****** COMPARES TWO STRINGS *****/
 /**
- * _strcmpr - compares two strings
+ * _strcmpr - compares two strings.
  * @strcmp1: first string, of two, to be compared in length
  * @strcmp2: second string, of two, to be compared
  * Return: 0 on success, anything else is a failure
@@ -51,7 +51,7 @@ int _strcmpr(char *strcmp1, char *strcmp2)
 
 /***** CONCATENATES TWO STRINGS *****/
 /**
- * _strcat - concatenates two strings
+ * _strcat - concatenates two strings.
  * @strc1: first string
  * @strc2: second string
  * Return: pointer
@@ -92,7 +92,7 @@ char *_strcat(char *strc1, char *strc2)
 
 /*** WRITES STRING TO STDOUT ***/
 /**
- * _puts - writes a string to standard output
+ * _puts - writes a string to standard output.
  * @str: string to write
  *
  * Return: number of chars printed or -1 on failure

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * tokenizer - tokenizes a buffer with a delimiter
+ * tokenizer - tokenizes a buffer with a delimiter.
  * @buffer: buffer to tokenize
  * @delimiter: delimiter to tokenize along
  *
@@ -38,7 +38,7 @@ char **tokenizer(char *buffer, char *delimiter)
 }
 
 /**
- * tokenize - tokenizes a buffer with a delimiter just use for for_child
+ * tokenize - tokenizes a buffer with a delimiter just use for for_child.
  * @line: buffer to tokenize
  * @delimiter: delimiter to tokenize along
  * @token_count: token count, size.
@@ -67,7 +67,7 @@ char **tokenize(int token_count, char *line, const char *delimiter)
 }
 
 /**
- * token_interface - token interface
+ * token_interface - token interface.
  * @line: line get to be tokenized
  * @delimiter: eny delimiter lie ; % " ", etc.
  * @token_count: token counter.
@@ -94,7 +94,7 @@ char **token_interface(char *line, const char *delimiter, int token_count)
 }
 
 /**
- * count_token - token's count
+ * count_token - token's count.
  * @line: string.
  * @delimiter: delimiter
  * Return: token's count

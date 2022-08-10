@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * new_help - help builtin command
- * @vars: if command matches a builtin name, text file is sent to stdout
- * Return: 0 if sucess
+ * new_help - help builtin command.
+ * @vars: if command matches a builtin name, text file is sent to stdout.
+ * Return: 0 if sucess.
  */
 
 void new_help(vars_t *vars)
@@ -27,8 +27,7 @@ void new_help(vars_t *vars)
 			r = write(1, s, r);
 			print_message("\n");
 			if (r == -1)
-			{
-				_puts_error("Fatal Error");
+			{				_puts_error("Fatal Error");
 				return;
 			}
 		}
@@ -41,7 +40,7 @@ void new_help(vars_t *vars)
 }
 
 /**
- * new_help_help - help builtin command help
+ * new_help_help - help builtin command help.
  * @vars: if command matches a builtin name, text file is sent to stdout
  * Return: 0 if sucess
  */
@@ -158,7 +157,7 @@ void new_help_cd(vars_t *vars)
 		new_help_env(vars);
 }
 /**
- * new_help_env - help builtin command env
+ * new_help_env - help builtin command env.
  * @vars: if command matches a builtin name, text file is sent to stdout
  * Return: 0 if sucess
  */

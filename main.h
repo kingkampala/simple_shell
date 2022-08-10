@@ -14,7 +14,7 @@
 #include <fcntl.h>
 
 /**
- * struct history - An structure for each command readed
+ * struct history - An structure for each command readed.
  * @str: string
  * @counter: number of imputs
  * @next: Next element
@@ -31,16 +31,16 @@ typedef struct history
 /**fixing**/
 /**** Estructura con las posibles variables que vamos a usar ****/
 /**
- * struct variables - variables
- * @array_tokens: array of tokens(arguments)
-  * @buffer: buffer of command
-  * @status: to handle exit status
-  * @argv: gets arguments at opening of shell
-  * @counter: counts commands entered
-  * @env: has enviroment
+ * struct variables - variables.
+ * @array_tokens: array of tokens(arguments).
+  * @buffer: buffer of command.
+  * @status: to handle exit status.
+  * @argv: gets arguments at opening of shell.
+  * @counter: counts commands entered.
+  * @env: has enviroment.
   * @commands: have commands.
-  * @history: structure
-  * @invert: structure
+  * @history: structure.
+  * @invert: structure.
  */
 typedef struct variables
 {

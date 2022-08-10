@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * add_value - create a new environment variable string
+ * add_value - create a new environment variable string.
  * @key: variable name
  * @value: variable value
  *
@@ -28,7 +28,7 @@ char *add_value(char *key, char *value)
 }
 
 /**
- * find_key - finds an environment variable
+ * find_key - finds an environment variable.
  * @env: array of environment variables
  * @key: environment variable to find
  *
@@ -54,7 +54,7 @@ char **find_key(char **env, char *key)
 }
 
 /**
- * add_key - create a new environment variable
+ * add_key - create a new environment variable.
  * @vars: pointer to struct of variables
  *
  * Return: void

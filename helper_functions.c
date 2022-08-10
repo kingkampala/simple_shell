@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts_error - print a string to sdandart error
+ * _puts_error - print a string to sdandart error.
  * @str: string to print.
  * Return: void
  */
@@ -22,8 +22,8 @@ void _puts_error(char *str)
 
 /**** imprime mensage de error con ciertor parametros ****/
 /**
- * prints_error_msg - prints error messages to standard error
- * @vars: pointer to struct of variables
+ * prints_error_msg - prints error messages to standard error.
+ * @vars: pointer to struct of variables.
  * @msg: message to print
  *
  * Return: void
@@ -51,10 +51,10 @@ void prints_error_msg(vars_t *vars, char *msg)
 }
 
 /**
- * integer_converter - converts an unsigned int to a string
+ * integer_converter - converts an unsigned int to a string.
  * @count: unsigned int to convert
  *
- * Return: pointer to the converted string
+ * Return: pointer to the converted string.
  */
 
 char *integer_converter(unsigned int count)

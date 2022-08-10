@@ -21,7 +21,7 @@ void print_str(char *str, int new_line)
 
 /*** PRINT A SINGLE LETTER ***/
 /**
- * _write_char - Writes a character to stdout
+ * _write_char - Writes a character to stdout.
  * @c: Character that will be written to stdout
  * Return: Upon success how many characters were written.
  */
@@ -32,7 +32,7 @@ int _write_char(char c)
 
 /*** PRINT EVERY DIGIT OF A NUMBER AS SINGLE CHARS ***/
 /**
- * print_number - Prints an unsigned number
+ * print_number - Prints an unsigned number.
  * @n: unsigned integer to be printed
  * Return: The amount of numbers printed
  */

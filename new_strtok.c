@@ -68,10 +68,10 @@ char *new_strtok(char *str, const char *delim)
 /**
  * build_path - Combines two strings one representing the path directory and
  * another representing the command file.
- * @directory: Represents a directory in the path.
- * @command: Represents a file in a directory of the path.
- * Return: Upon success a string representing the full path of a command.
- * Otherwise NULL.
+ * @directory: Represents a directory in the path
+ * @command: Represents a file in a directory of the path
+ * Return: Upon success a string representing the full path of a command
+ * Otherwise NULL
  */
 char *build_path(char *directory, char *command)
 {

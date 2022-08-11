@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * make_enviroment - make the shell environment from the environment.
+ * make_enviroment - make the shell environment from the environment
  * @env: environment passed to main
  *
  * Return: pointer to the new environment
@@ -27,7 +27,7 @@ size_t i;
 }
 
 /**
- * free_env - free the shell's environment
+ * free_env - free the shell's environment.
  * @env: shell's environment
  *
  * Return: void
@@ -43,10 +43,10 @@ void free_env(char **env)
 
 /**
  * chdir_to_env - go to the directory that points the adress of the
- *                the environment variable.
+ *                the environment variable
  * @vars: vars variable of struct vars_t
  * @str: name of env var to find.
- * Return: always return void.
+ * Return: always return void
  */
 void chdir_to_env(vars_t *vars, char *str)
 {

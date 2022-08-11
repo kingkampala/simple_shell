@@ -4,8 +4,8 @@
 /**
  * print_str - Prints a string character by character.
  * @str: String to be printed. If the string is NULL it will print (null)
- * @new_line: If integer is 0 a new line will be printed. Otherwise a new line
- * will not be printed.
+ * @new_line: If integer is 0 a new line will be printed, Otherwise a new line
+ * will not be printed
  */
 void print_str(char *str, int new_line)
 {
@@ -23,7 +23,7 @@ void print_str(char *str, int new_line)
 /**
  * _write_char - Writes a character to stdout.
  * @c: Character that will be written to stdout
- * Return: Upon success how many characters were written.
+ * Return: Upon success how many characters were written
  */
 int _write_char(char c)
 {

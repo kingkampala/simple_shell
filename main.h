@@ -14,7 +14,7 @@
 #include <fcntl.h>
 
 /**
- * struct history - An structure for each command readed.
+ * struct history - An structure for each command readed
  * @str: string
  * @counter: number of imputs
  * @next: Next element
@@ -57,7 +57,7 @@ typedef struct variables
 } vars_t;
 
 /**
- * struct builtins - struct for the builtin functions
+ * struct builtins - struct for the builtin functions.
  * @name: name of builtin command
  * @f: function for corresponding builtin
  */

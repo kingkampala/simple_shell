@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcmp - compares two strings.
+ * _strcmp - compares two strings
  * @s1: First string
  * @s2: Second string
- * Return: 0 if strings match. -1 Otherwise.
+ * Return: 0 if strings match, -1 Otherwise
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -21,10 +21,10 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
- * error_printing - Prints a message error when a comand is not found.
- * @count: A counter keeping track of the number of commands run on the shell.
- * @av: The name of the program running the shell.
- * @command: The specific command not being found.
+ * error_printing - Prints a message error when a comand is not found
+ * @count: A counter keeping track of the number of commands run on the shell
+ * @av: The name of the program running the shell
+ * @command: The specific command not being found
  */
 void error_printing(char *av, int count, char *command)
 {
@@ -36,10 +36,10 @@ void error_printing(char *av, int count, char *command)
 }
 
 /**
- * exec_error - Prints exec errors.
- * @av: The name of the program running the shell.
- * @count: Keeps track of how many commands have been entered.
- * @tmp_command: The command that filed.
+ * exec_error - Prints exec errors
+ * @av: The name of the program running the shell
+ * @count: Keeps track of how many commands have been entered
+ * @tmp_command: The command that filed
  */
 
 void exec_error(char *av, int count, char *tmp_command)
@@ -51,8 +51,8 @@ void exec_error(char *av, int count, char *tmp_command)
 }
 
 /**
- * simple_error - Prints and exec simple error.
- * Return: always void.
+ * simple_error - Prints and exec simple error
+ * Return: always void
  */
 void simple_error(void)
 {

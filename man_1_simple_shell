@@ -1,12 +1,12 @@
 .TH SHELLBY 1 "July 2022" "ALX AFRICA" "0x16. C - Simple Shell"
-.SH NAME
-.B shellby\fR \- simple UNIX command interpreter
+.SH NAME.
+.B shellby\fR \- simple UNIX command interpreter.
 .SH SYNOPSIS
 .B shellby\fR [\fIfilename\fR]
 .SH DESCRIPTION
 .B Shellby\fR is a simple UNIX command language interpreter that reads commands from either a file or standard input and executes them.
 
-.B Invocation
+.B Invocation.
 .in +2n
 \fBShellby\fR can be invoked both interactively and non-interactively.
 If \fBshellby\fR is invoked with standard input not connected to a terminal, it reads and executes received commands in order.
@@ -19,13 +19,13 @@ The supplied file should contain one command per line.
 .B Shellby\fR runs each of the commands contained in the file in order before exiting.
 .in
 
-.B Environment
+.B Environment.
 .in +2n
 Upon invocation, \fBshellby\fR receives and copies the environment of the parent process in which it was exeucted.
 This \fBenvironment\fR is an array of \fIname-value\fR strings describing variables in the format \fINAME=VALUE\fR.
 .in
 
-.B Command Execution
+.B Command Execution.
 .in +2n
 After receiving a command, \fBshellby\fR tokenizes it into words using \fB" "\fR as a delimiter.
 The first word is considered the command and all remaining words are considered arguments to that command.
@@ -46,7 +46,7 @@ If there exists a shell builtin by that name, the builtin is invoked.
 the shell executes the named program with any remaining arguments given in a separate execution environment.
 .RE
 
-.B Exit Status
+.B Exit Status.
 .in +2n
 .B Shellby\fR returns the exit status of the last command executed, unless a syntax error occurs, with zero indicating success and non-zero indicating failure.
 
@@ -54,13 +54,13 @@ If a command is not found, the return status is 127; if a command is found but i
 
 .in
 
-.B Signals
+.B Signals.
 .in +2n
 While running in interactive mode, \fBshellby\fR ignores the keyboard input \fBCtrl+c\fR.
 Alternatively, an input of end-of-file (\fBCtrl+d\fR) will exit the program.
 .in
 
-.B Variable Replacement
+.B Variable Replacement.
 .in +2n
 .B Shellby\fR inerprets the \fI$\fR character for variable replacement:
 
@@ -76,12 +76,12 @@ Alternatively, an input of end-of-file (\fBCtrl+d\fR) will exit the program.
 .B $$\FR			The second \fI$\fR is substituted with the current process ID.
 .RE
 
-.B Comments
+.B Comments.
 .in +2n
 .B Shellby\fR ignores all words and characters preceeded by a \fI#\fR character on a line.
 .in
 
-.B Operators
+.B Operators.
 .in +2n
 
 .RS
@@ -90,12 +90,12 @@ Alternatively, an input of end-of-file (\fBCtrl+d\fR) will exit the program.
 Commands separated by a \fI;\fR are executed sequentially.
 .RE
 
-.B &&\fR - AND logical operator
+.B &&\fR - AND logical operator.
 .RS
 .I command1\fR && \fIcommand2\fR: \fIcommand2\fR is executed if, and only if, \fIcommand1\fR returns an exit status of zero.
 .RE
 
-.B ||\fR - OR logical operator
+.B ||\fR - OR logical operator.
 .RS
 .I command1\fR || \fIcommand2\fR: \fIcommand2\fR is executed if, and only if, \fIcommand1\fR returns a non-zero exit status.
 .RE
@@ -103,7 +103,7 @@ Commands separated by a \fI;\fR are executed sequentially.
 The operators \fI&&\fR and \fI||\fR have equal precedence, followed by \fI;\fR.
 .RE
 
-.B Shellby Builtin Commands
+.B Shellby Builtin Commands.
 .in +2n
 
 .RS
@@ -120,7 +120,7 @@ If the argument \fB-\fR is given, the command is interpreted as \fBcd $OLDPWD\fR
 The environment variables \fBPWD\fR and \fBOLDPWD\fR are updated after a change of directory.
 .RE
 
-.B alias
+.B alias.
 .RS
 Usage: \fBalias [NAME[='VALUE'] ...]\fR
 
@@ -134,7 +134,7 @@ Handles aliases.
 If \fIname\fR is already an alias, its value is replaced with \fIVALUE\fR.
 .RE
 
-.B exit
+.B exit.
 .RS
 Usage: \fBexit [STATUS]\fR
 
@@ -145,14 +145,14 @@ The \fBSTATUS\fR argument is the integer used to exit the shell.
 If no argument is given, the command is interpreted as \fBexit 0\fR.
 .RE
 
-.B env
+.B env.
 .RS
 Usage: \fBenv\fR
 
 Prints the current environment.
 .RE
 
-.B setenv
+.B setenv.
 .RS
 Usage: \fBsetenv [VARIABLE] [VALUE]\fR
 
@@ -161,7 +161,7 @@ Initializes a new environment variable, or modifies an existing one.
 Upon failure, prints a message to \fBstderr\fR
 .RE
 
-.B unsetenv
+.B unsetenv.
 .RS
 Usage: \fBunsetenv [VARIABLE]\fR
 
@@ -177,5 +177,5 @@ access(2), chdir(2), execve(2), _exit(2), exit(3), fflush(3), fork(2), free(3), 
 
 .B Shellby\fR emulates basic functionality of the \fBsh\fR shell.
 This man page borrows from the corresponding man pages sh(1) and dash(1).
-.SH AUTHOR
+.SH AUTHOR.
 Ezeanya Thankgod and Jennifer Agbor.
